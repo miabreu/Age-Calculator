@@ -38,7 +38,7 @@ description
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github]([https://your-solution-url.com](https://github.com/miabreu/Age-Calculator/blob/main/README.md))
 - Live Site URL: [Site](https://symphonious-sable-9e51b7.netlify.app)
 
 ## My process
