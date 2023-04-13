@@ -10,7 +10,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Links](#links)
 - [My Process](#my-process)
   - [Built with](#built-with)
-  - [What I Learned](#what-i-learned)
+  - [Takeaways](#takeaways)
 
 
 ## Overview
@@ -55,15 +55,27 @@ Above is a screenshot of a web application interface for an age calculator. The 
 - [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
-### What I Learned
+### Takeaways
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+While working on this change I was able to practice:
 
-To see how you can add code snippets, see below:
+1. How to retrieve and manipulate user input with JavaScript
+2. How to calculate a user's age based on their birthdate and the current date using JavaScript's Date object
+3. How to display the calculated age on the webpage using JavaScript
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+One of the coolest code snippets from the project is the following JavaScript code that calculates the user's age based on their birthdate and the current date:
+
 ```
+function calculateAge() {
+  const birthdate = new Date(document.getElementById("birthdate").value);
+  const currentDate = new Date(document.getElementById("currentdate").value);
+
+  const ageInMilliseconds = currentDate - birthdate;
+  const millisecondsPerYear = 1000 * 60 * 60 * 24 * 365.25;
+  const age = Math.floor(ageInMilliseconds / millisecondsPerYear);
+
+  document.getElementById("result").textContent = `Your age is ${age} years old.`;
+}
 ```
 
-```
+This code retrieves the values of the birthdate and current date input fields, converts them to JavaScript Date objects, and calculates the difference between them in milliseconds. It then calculates the number of years represented by that difference and displays the result in a message on the webpage. The code also takes into account the leap year by calculating an average of 365.25 days per year.
