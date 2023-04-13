@@ -34,7 +34,7 @@ Users should be able to:
 
 <img width="1256" alt="Screen Shot 2023-04-12 at 8 06 26 PM" src="https://user-images.githubusercontent.com/42332056/231612663-3426f03a-e1c2-4f17-ba2a-d5511ec165d4.png">
 
-description
+Above is a screenshot of a web application interface for an age calculator. The interface consists of a simple form with two input fields: one for the user's birthdate and another for the current date. There is also a "Calculate" button to initiate the age calculation.
 
 ### Links
 
